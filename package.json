@@ -1,45 +1,15 @@
 {
-    "name": "vague-time",
-    "version": "1.0.0",
-    "description": "A tiny library that formats precise time differences as a vague/fuzzy time, e.g. '3 months ago', 'just now' or 'in 2 hours'.",
-    "homepage": "https://github.com/philbooth/vagueTime.js",
-    "bugs": "https://github.com/philbooth/vagueTime.js/issues",
-    "license": "MIT",
-    "author": "Phil Booth <pmbooth@gmail.com> (https://github.com/philbooth)",
-    "main": "./lib/vagueTime",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/philbooth/vagueTime.js.git"
-    },
-    "keywords": [
-        "time",
-        "date",
-        "fuzzy",
-        "vague",
-        "estimate"
-    ],
-    "devDependencies": {
-        "jshint": "2.4.x",
-        "commander": "2.2.x",
-        "mocha": "1.17.x",
-        "chai": "1.9.x",
-        "uglify-js": "2.4.x"
-    },
-    "scripts": {
-        "lint": "./node_modules/.bin/jshint ./src/vagueTime.js --config config/jshint.json",
-        "build": "npm run build-da && npm run build-de && npm run build-en && npm run build-fr && npm run build-nl && npm run build-enda && npm run build-ende && npm run build-enfr && npm run build-ennl && npm run build-all",
-        "build-da": "./build.js -l da",
-        "build-de": "./build.js -l de",
-        "build-en": "./build.js -l en",
-        "build-fr": "./build.js -l fr",
-        "build-nl": "./build.js -l nl",
-        "build-enda": "./build.js -l en,da",
-        "build-ende": "./build.js -l en,de",
-        "build-enfr": "./build.js -l en,fr",
-        "build-ennl": "./build.js -l en,nl",
-        "build-all": "./build.js -d en",
-        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors ./test/vagueTime.js",
-        "minify": "./node_modules/.bin/uglifyjs ./lib/vagueTime.js --compress --mangle --output ./lib/vagueTime.min.js"
-    }
+  "name": "philbooth-vaguetime.js",
+  "description": "A tiny library that formats precise time differences as a vague/fuzzy time, e.g. '3 months ago', 'just now' or 'in 2 hours'.",
+  "version": "1.0.0",
+  "keywords": [
+    "time",
+    "date",
+    "fuzzy",
+    "vague",
+    "estimate"
+  ],
+  "main": "lib/vagueTime.js",
+  "dependencies": {},
+  "license": "MIT"
 }
-
